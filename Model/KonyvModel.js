@@ -2,7 +2,13 @@ class KonyvModel {
     #konyvekTomb = [];
 
     constructor() {
-        console.log("KonyvModel");
+        //console.log("KonyvModel");
+    }
+    adatTorol(adat){
+        console.log("törlöm a modelben",adat);
+    }
+    adatModosit(adat){
+        console.log("módosítom a modelben",adat);
     }
 
     adatBe(vegpont, myCallBack) {
@@ -14,9 +20,9 @@ class KonyvModel {
         })
             .then((response) => response.json())
             .then((data) => {
-                console.log('Success:', data);
+                //console.log('Success:', data);
                 this.#konyvekTomb = data.konyv;
-                console.log(this.#konyvekTomb);
+                //console.log(this.#konyvekTomb);
                 myCallBack(this.#konyvekTomb);
             })
             .catch((error) => {
