@@ -1,4 +1,4 @@
-class KonyvView {
+class KonyvAdminView {
     #elem
     constructor(elem, szuloElem) {
         // console.log("KonyvView");
@@ -41,4 +41,4 @@ class KonyvView {
     }
 }
 
-export default KonyvView;
+export default KonyvAdminView;

@@ -1,0 +1,16 @@
+*{box-sizing: border-box;}
+
+main{
+    margin: auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+.divKonyv{
+    border: 1px solid gray;
+    margin: auto;
+}
+.divKonyv .cime{
+    font-size: 30px;
+}

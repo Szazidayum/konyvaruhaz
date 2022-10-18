@@ -1,7 +1,8 @@
-import KonyvView from "./konyvAdminView.js";
+import KonyvAdminView from "./konyvAdminView.js";
 
-class KonyvekView {
+class KonyvekAdminView {
     constructor(tomb, szuloElem) {
+        console.log("admin");
         szuloElem.append(`<table><thead><tr>
         <th>ID</th>
         <th>Cím</th>
@@ -12,7 +13,7 @@ class KonyvekView {
         this.tbodyElem = this.tablaElem.children("tbody");
 
         tomb.forEach(konyv => {
-            const konyvObj = new KonyvView(konyv, this.tablaElem);
+            const konyvObj = new KonyvAdminView(konyv, this.tablaElem);
             this.konyvMegjelenit(konyvObj);
         });
     }
@@ -24,4 +25,4 @@ class KonyvekView {
     }
 }
 
-export default KonyvekView;
+export default KonyvekAdminView;

@@ -1,10 +1,11 @@
-import KonyvekView from "../View/konyvekAdinView.js";
-import KonyvModel from "../Model/KonyvModel.js";
+import KonyvekAdminView from "../View/konyvekAdminView.js";
+import KonyvAdminModel from "../Model/KonyvModel.js";
+import KonyvekPublicView from "../View/KonyvekPublicView.js"
 
 class KonyvController {
     constructor() {
         //console.log("KonyvController");
-        const konyvmodel = new KonyvModel();
+        const konyvmodel = new KonyvAdminModel();
         konyvmodel.adatBe("../adat.json", this.konyvAdatok);
         $(window).on("modosit",(event)=>{
             //console.log("controllerben módosít", event.detail);
@@ -18,8 +19,9 @@ class KonyvController {
 
     konyvAdatok(tomb) {
         //console.log(tomb);
-        let szuloelem = $("main");
-        new KonyvekView(tomb,szuloelem);
+        let szuloElem = $("main");
+        //new KonyvekAdminView(tomb,szuloElem);
+        new KonyvekPublicView(tomb,szuloElem);
     }
 }
 
