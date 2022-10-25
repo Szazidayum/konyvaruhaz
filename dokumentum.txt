@@ -30,3 +30,25 @@ Felépítés:
         oldal megjelenítése
         konyvAdminView - egy könyv adatai (táblázat egyetlen sora)
         konyvekAdminView - az összes könyv adatait megjeleníti (táblázat létrehozása a fejléccel)
+
+kosár
+felhasználó rákattint a kiválasztott termékre - ezzel generál egy új eseményt
+publikus felület --> View generálja az eseményt
+--> Controller feliratkozik az eseménykezelőre
+--> Controller meghívja a modell metódusát
+--> Modell pedig kosárba teszi a terméket
+
+Megjeleníteni a kosár adatait
+publikus (KonyvPublicView) felület --> View generálja az eseményt
+Contoller feliratkozik az eseménykezelőre
+Modell: ami kezeli a kosarat kosarTomb-be teszi
+Kell egy kosár gomb az Index.html - megnézzük a kosár tartalmát
+
+Új
+KosarModell: kosár adatait kezeli
+    #kosarTomb
+    getKosarTomb
+KosarController: kapcsolatot létrehozni a KosarModell és a KosarView között
+KosarView - megjeleníti a kosár tartalma
+    kosarTomb tartalmát jeleníti meg az oldalon
+    pl. táblázatban, (törli a kosárból, ++példányszám változtatása)

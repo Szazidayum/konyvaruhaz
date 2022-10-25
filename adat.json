@@ -11,6 +11,18 @@
         "cim":"A programozás rejtelmei",
         "szerzo":"Gipsz Jakab",
         "ar":2000
+    },
+    {
+        "id":3,
+        "cim":"Tövisek hercege",
+        "szerzo":"Mark Lawrence",
+        "ar":2000
+    },
+    {
+        "id":4,
+        "cim":"Trónok harca",
+        "szerzo":"George R. R. Martin",
+        "ar":2000
     }
     ]
 }
