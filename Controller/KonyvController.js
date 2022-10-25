@@ -25,11 +25,11 @@ class KonyvController {
     }
 
     konyvAdminAdatok(tomb) {
-        let szuloElem = $("main");
+        let szuloElem = $(".konyvekAdminLista");
         new KonyvekAdminView(tomb,szuloElem);
     }
     konyvPublicAdatok(tomb) {
-        let szuloElem = $("main");
+        let szuloElem = $(".konyvekPublicLista");
         new KonyvekPublicView(tomb,szuloElem);
     }
 }

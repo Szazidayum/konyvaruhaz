@@ -6,7 +6,7 @@ class KonyvPublicView{
         <div class="cime">${elem.cim}</div>
         <div class="szerzoje">${elem.szerzo}</div>
         <div class="ara">${elem.ar}</div>
-        <div class="buttonT${elem.id}"><button id="K${elem.id}">kosárba</button></div>
+        <div class="buttonK${elem.id}"><button id="K${elem.id}">kosárba</button></div>
         `);
 
        this.kosarbaElem = $(`#K${elem.id}`);
