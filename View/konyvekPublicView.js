@@ -3,8 +3,8 @@ import KonyvPublicView from "./konyvPublicView.js";
 
 class KonyvekPublicView {
     constructor(tomb, szuloElem) {
-        console.log("public");
-        szuloElem.append(`<div class="divKonyv"></div>`);
+        //console.log("public");
+        szuloElem.append(`<div class="divKonyvek"></div>`);
         this.divElem = szuloElem.children("div:last-child");
 
         tomb.forEach(konyv => {

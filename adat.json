@@ -4,25 +4,29 @@
         "id":1,
         "cim":"Pál utcai fiúk",
         "szerzo":"Molnár Ferenc",
-        "ar":1115
+        "ar":1115,
+        "kep":"/kepek/a-pal-utcai-fiuk.jpg"
     },
     {
         "id":2,
-        "cim":"A programozás rejtelmei",
-        "szerzo":"Gipsz Jakab",
-        "ar":2000
+        "cim":"Szoftvertesztelési alapismeretek",
+        "szerzo":"Fehér Krisztián",
+        "ar":2000,
+        "kep":"/kepek/E24510.jpeg"
     },
     {
         "id":3,
         "cim":"Tövisek hercege",
         "szerzo":"Mark Lawrence",
-        "ar":2000
+        "ar":2000,
+        "kep":"/kepek/covers_172751.jpg"
     },
     {
         "id":4,
         "cim":"Trónok harca",
         "szerzo":"George R. R. Martin",
-        "ar":2000
+        "ar":2000,
+        "kep":"/kepek/GRRM1_AGOT_TronokHarca.jpg"
     }
     ]
 }

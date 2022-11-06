@@ -1,19 +1,35 @@
 class KosarView{
     constructor(tomb, szulotomb){
         szulotomb.html("");
+
+       
+        
         for (let i = 0; i < tomb.length; i++) {
-            szulotomb.append(`
-        <div class="cime">${tomb[i].cim}</div>
-        <div class="szerzoje">${tomb[i].szerzo}</div>
-        <div class="ara">${tomb[i].ar}</div>
-        <div class="buttonT${tomb[i].id}"><button id="T${tomb[i].id}">törlés</button></div>
-        `);
+            
+            szulotomb.append(`<tr>
+        <td>${tomb[i].cim}</td>
+        <td>${tomb[i].szerzo}</td>
+        <td><button id="T${tomb[i].id}">-</button></td>
+        <td>${tomb[i].db}</td>
+        <td><button id="H${tomb[i].id}">+</button></td>
+        </tr>`);
         this.kosarbolTorol = $(`#T${tomb[i].id}`);
         this.kosarbolTorol.on("click", ()=>{
-            console.log("törlömöm:"+this.kosarbolTorol);
-            //tömbből törlés
+            if(tomb[i].db==1){
+                tomb.splice(i,1);
+            }else{
+                tomb[i].db--;
+            }
+            
         });
+        this.kosarbaAd = $(`#H${tomb[i].id}`);
+        this.kosarbaAd.on("click", ()=>{
+                tomb[i].db++;
+            
+        });
+        
         }
     }
 }
 export default KosarView;
+
